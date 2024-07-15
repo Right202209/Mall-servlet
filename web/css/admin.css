@@ -1,0 +1,149 @@
+
+/* Reset some default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40;
+    border: none;
+    border-radius: 0;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-size: 24px;
+}
+
+.navbar .navbar-nav > li > a {
+    color: #ddd;
+    padding: 15px 20px;
+}
+
+.navbar .navbar-nav > li.active > a {
+    color: #fff;
+    background-color: #495057;
+}
+
+.navbar .navbar-nav > li > a:hover {
+    background-color: #495057;
+    color: #fff;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    /*padding: 20px 0;*/
+    list-style: none;
+    margin: 0px;
+    padding: 0px
+}
+
+.pagination .page-item {
+    margin: 0 5px;
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #ddd;
+    pointer-events: none;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #343a40;
+    border-color: #343a40;
+    color: #fff;
+}
+
+.pagination .page-link {
+    color: #343a40;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.pagination .page-link:hover {
+    background-color: #343a40;
+    color: #fff;
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* Style for form elements */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.control-label {
+    font-weight: bold;
+}
+
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+/* Style for panels */
+.panel {
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 3px 3px 0 0;
+    background-color: #f5f5f5;
+}
+
+.panel-body {
+    padding: 15px;
+}
+
+/* Style for containers and breadcrumbs */
+.container {
+    margin-top: 20px;
+}
+
+.breadcrumb {
+    background-color: #f5f5f5;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.breadcrumb > li + li:before {
+    content: ">";
+    padding: 0 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .panel {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
